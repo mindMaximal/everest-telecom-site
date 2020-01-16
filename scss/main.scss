@@ -1,0 +1,165 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1280px;
+	padding: 0 60px;
+	margin: auto;
+}
+
+.color-btn {
+	color: $btn;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+section {
+	padding: 60px 0;
+}
+
+.wrapper__link {
+	.link {
+		background-color: $btn;
+		transition: .2s;
+		padding: 24px 66px;
+		color: #ffffff;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 2px solid transparent;
+		border-radius: 2px;
+		position: relative;
+	
+		&:before {
+			content: url('../img/link-before.svg');
+			position: absolute;
+			height: 14px;
+			width: 7px;
+			top: 50%;
+			left: 16%;
+			transform: translateY(-87%);
+		}
+	
+		&:hover {
+			background-color: transparent;
+			border: 2px solid $btn;
+		}
+	}
+}
+
+object {
+	max-width: 100%;
+}
+
+.home {
+	background-color: #404EF5;
+	padding: 17px 0 60px 0;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 100%;
+
+	&__header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__phone {
+		font-size: 1em;
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: 600;
+		transition: .2s;
+
+		&:hover {
+			color: $btn;
+		}
+	}
+
+	&__title {
+		font-size: 3.375em;
+		font-weight: 600;
+		max-width: 770px;
+		line-height: 1.1;
+		margin: 60px 0 0 0;
+	}
+
+	&__text {
+		max-width: 573px;
+		font-size: 1.375em;
+		margin: 14px 0 40px 0;
+		padding: 0;
+	}
+
+	&__speed {
+		font-size: 	1.125em;
+		font-weight: normal;
+
+		&-number {
+			font-size: 1.437em;
+			font-weight: 600;
+		}
+	}
+
+	&__offer {
+		font-weight: 600;
+		font-size: 1.25em;
+		margin-top: 40px;
+		margin-bottom: 28px;
+	}
+}
+
+@import "media"; // Always at the end

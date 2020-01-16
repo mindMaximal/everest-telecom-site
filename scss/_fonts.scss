@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-Medium");
+@include font-face("Montserrat", "../fonts/Montserrat/Montserrat-SemiBold", 600);
+
+
+@include font-face("Noto_Sans", "../fonts/Noto_Sans/NotoSans-Regular");
+@include font-face("Noto_Sans", "../fonts/Noto_Sans/NotoSans-Bold", bold);
