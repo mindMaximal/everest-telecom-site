@@ -39,9 +39,9 @@
     }
 
     .home {
-        background-position: 70%;
-        background-size: cover;
+        background-size: contain;
         padding: 16px 0 20px 0;
+        background-image: url('../img/home/320.jpg');
 
         &__logo {
             max-width: 130px;
