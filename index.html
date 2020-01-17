@@ -28,9 +28,9 @@
 
 <body>
 
-	<section class="home">
+	<section class="home section">
 		<div class="container">
-			<header class="home__header">
+			<header class="home__header flex flex-space-between flex-align-center">
 				<div class="home__logo">
 					<object
 						type="image/svg+xml"
@@ -38,18 +38,19 @@
 						<img src="img/logo.png" alt="Logo">
 					</object>
 				</div>
-				<div class="home__contancts">
-					<a class="home__phone" href="tel:+74959810000">+7 (495) 981-00-00</a>
+				<div class="home__contacts">
+					<a class="home__phone home__link" href="tel:+74959810000">+7 (495) 981-00-00</a>
+					<a class="link-account home__link link-white" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
 				</div>
 			</header>
 			<h1 class="home__title">
 				Беспроводной интернет в частный дом или на дачу в Иркутске
 			</h1>
-			<p class="home__text">
+			<p class="home__text font-noto">
 				Подключение возможно по Иркутской области даже <span class="font-bold">в самых труднодоступных районах.</span>
 			</p>
 			<div class="home__speed">
-				<span class="home__speed-number color-btn">До 100 Мбит/с</span> <span class="mobile-hidden">– </span>cкорость интернета
+				<span class="home__speed-number color-red">До 100 Мбит/с</span> <span class="mobile-hidden">– </span>cкорость интернета
 			</div>
 			<div class="home__speed">
 				<span class="home__speed-number">От 9000 руб.</span> <span class="mobile-hidden">– </span>подключение
@@ -58,15 +59,591 @@
 				<span class="home__speed-number">От 900 руб./мес</span> <span class="mobile-hidden">– </span>абонентская плата 
 			</div>
 
-			<div class="home__offer">
-				Оставь заявку и получи первый месяц доступа в интернет <span class="color-btn">бесплатно!</span>
+			<div class="home__offer font-noto">
+				Оставь заявку и получи первый месяц доступа в интернет <span class="color-red">бесплатно!</span>
 			</div>
 
 			<div class="wrapper__link">
-				<a href="#" class="link">ПОДКЛЮЧИТЬ</a>
+				<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
 			</div>
 		</div>
 	</section>
+
+	<section class="benefits section">
+		<div class="container">
+
+			<h2 class="benefits__title base-title">
+				Стабильный интернет в частном доме или на даче <span class="color-red">до 100 Мбит/с</span> по технологии ЭВЕРЕСТ-ТЕЛЕКОМ
+			</h2>
+
+			<div class="quote font-noto">
+				Хотите получить быстрый и стабильный интернет за городом, в частном доме или на даче?
+			</div>
+			<div class="quote font-noto">
+				Кабельных провайдеров нет в вашей местности или они отказываются подключать к сети ваш частный дом, а мобильный интернет работает медленно и не стабильно?
+			</div>
+			<div class="quote font-noto border-red">
+				Выход есть! Обращайтесь к нам. Мы установим комплект оборудования, который обеспечит ваш дом скоростным интернетом практически в любой местности. Подключим вам безлимитный тариф.
+			</div>
+
+			<div class="benefits-wrapper flex flex-wrap-tablet flex-space-between flex-align-stretch flex-mobile-column">
+
+				<div class="benefit-card font-noto">
+					<div class="benefit-card__title flex flex-align-center">
+						<h4>СМОТРИТЕ<br>ЛЮБИМЫЕ ФИЛЬМЫ</h4>
+					</div>
+					<div class="benefit-card__img-wrapper">
+						<picture alt="Image" class="benefit-card__img">
+							<source srcset="img/benefit-card/films.jpg" media="(min-width:960px)">
+							<source srcset="img/benefit-card/films-small.jpg" media="(min-width:768px)">
+							<source srcset="img/benefit-card/films.jpg" media="(min-width:320px)">
+							<img src="img/benefit-card/films.jpg" alt="Image" class="">
+						 </picture>
+					</div>
+					<p class="benefit-card__text">
+						Использование безлимитного беспроводного интернета по технологии ЭВЕРЕСТ ТЕЛЕКОМ будет актуально для тех, кто постоянно
+					</p>
+				</div>
+
+				<div class="benefit-card font-noto">
+					<div class="benefit-card__title flex flex-align-center">
+						<h4>ИГРАЙТЕ В ИГРЫ</h4>
+					</div>
+					<div class="benefit-card__img-wrapper">
+						<picture alt="Image" class="benefit-card__img">
+							<source srcset="img/benefit-card/game.jpg" media="(min-width:960px)">
+							<source srcset="img/benefit-card/game-small.jpg" media="(min-width:768px)">
+							<source srcset="img/benefit-card/game.jpg" media="(min-width:320px)">
+							<img src="img/benefit-card/game.jpg" alt="Image" class="">
+						 </picture>
+					</div>
+					<p class="benefit-card__text">
+						Использование безлимитного беспроводного интернета по технологии ЭВЕРЕСТ ТЕЛЕКОМ будет актуально для тех, кто постоянно
+					</p>
+				</div>
+
+				<div class="benefit-card font-noto">
+					<div class="benefit-card__title flex flex-align-center">
+						<h4>РАБОТАЙТЕ<br>В ИНТЕРНЕТЕ</h4>
+					</div>
+					<div class="benefit-card__img-wrapper">
+						<picture alt="Image" class="benefit-card__img">
+							<source srcset="img/benefit-card/work.jpg" media="(min-width:960px)">
+							<source srcset="img/benefit-card/work-small.jpg" media="(min-width:768px)">
+							<source srcset="img/benefit-card/work.jpg" media="(min-width:320px)">
+							<img src="img/benefit-card/work.jpg" alt="Image" class="">
+						 </picture>
+					</div>
+					<p class="benefit-card__text">
+						Использование безлимитного беспроводного интернета по технологии ЭВЕРЕСТ ТЕЛЕКОМ будет актуально для тех, кто постоянно
+					</p>
+				</div>
+
+				<div class="benefit-card font-noto">
+					<div class="benefit-card__title flex flex-align-center">
+						<h4>ОБЩАЙТЕСЬ С ДРУЗЬЯМИ С СОЦ.СЕТЯХ</h4>
+					</div>
+					<div class="benefit-card__img-wrapper">
+						<picture alt="Image" class="benefit-card__img">
+							<source srcset="img/benefit-card/converse.jpg" media="(min-width:960px)">
+							<source srcset="img/benefit-card/converse-small.jpg" media="(min-width:768px)">
+							<source srcset="img/benefit-card/converse.jpg" media="(min-width:320px)">
+							<img src="img/benefit-card/converse.jpg" alt="Image" class="">
+						 </picture>
+					</div>
+					<p class="benefit-card__text">
+						Использование безлимитного беспроводного интернета по технологии ЭВЕРЕСТ ТЕЛЕКОМ будет актуально для тех, кто постоянно
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	
+	<section class="how-it-works section">
+		<div class="container">
+
+			<h2 class="how-it-works__title base-title">Скоростной интернет по технологии ЭВЕРЕСТ – ТЕЛЕКОМ</h2>
+
+			<div class="how-it-works__text">
+				Использование безлимитного беспроводного интернета по технологии <span class="color-red">ЭВЕРЕСТ – ТЕЛЕКОМ</span> будет актуально для тех, кто постоянно или время от времени <span class="font-bold">проживает за городом</span> и кому необходим быстрый интернет для работы или учебы, для общения с родными и близкими и других задач. 
+			</div>
+
+			<span class="line-decorate font-bold">Мы предлагаем не отказываться от высоких скоростей интернета и за пределами больших городов.</span>
+			
+			<div class="how-it-works__subtitle">
+				<h3>Как это работает?</h3>
+			</div>
+
+			<div class="hardware">
+				<div class="hardware__wrapper">
+
+					<div class="hardware__item font-noto flex">
+						<div class="hardware__icon">
+							<img src="img/how-it-work/3.svg" class="hardware__img" alt="Icon">
+						</div>
+						<div class="hardware__description">
+							<div class="hardware__title font-bold">
+								Эверест антенна принимает сигнал от базовой станции
+							</div>
+							<div class="hardware__text">
+								Направленная антенна позволяет стабилизировать сигнал и увеличить скорость 4G интернета, а так же установить соединение в зонах слабого приема.
+							</div>
+						</div>
+					</div>
+
+					<div class="hardware__item font-noto flex">
+						<div class="hardware__icon">
+							<img src="img/how-it-work/2.svg" class="hardware__img" alt="Icon">
+						</div>
+						<div class="hardware__description">
+							<div class="hardware__title font-bold">
+								4G модем принимает сигнал
+							</div>
+							<div class="hardware__text">
+								И передает его на WI_FI роутер модем обеспечивает доступ в интернет и передвет его на Wi-Fi роутер, к которому подключаются все ваши устройства 
+							</div>
+						</div>
+					</div>
+
+					<div class="hardware__item font-noto flex">
+						<div class="hardware__icon">
+							<img src="img/how-it-work/1.svg" class="hardware__img" alt="Icon">
+						</div>
+						<div class="hardware__description">
+							<div class="hardware__title font-bold">
+								Наслаждайтесь стабильным быстрым интернетом
+							</div>
+							<div class="hardware__text">
+								При любой погоде ,24 часа в сутки комплект приема и усиления  4G-сигнала обеспечивает вас непрерывным высокоскоростным доступом в интернет на всех ваших устройствах
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="wrapper__link">
+				<a href="" class="link link-red">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="connection section">
+		<div class="container">
+
+			<h2 class="connection__title base-title">Комплекты подключения</h2>
+
+			<div class="sales">
+				<div class="sales__wrapper flex flex-space-between flex-align-stretch flex-mobile-column">
+
+					<div class="sale-item font-noto">
+						<div class="sale-item__title">
+							ЭКОНОМ
+						</div>
+						<div class="sale-item__img-wrapper">
+							<img class="sale-item__img" src="img/connection/antena.png" alt="Product">
+						</div>
+						<ul class="sale-item__list list-bullet">
+							<li class="list-bullet__item">Антенна KROKS KP15-1700/2700</li>
+							<li class="list-bullet__item">Модем Huawei E3372h</li>
+							<li class="list-bullet__item">Кабельная сборка F(male)-F(male) </li>
+							<li class="list-bullet__item">Адаптер для модема (пигтейл) CRC9-F</li>
+							<li class="list-bullet__item">Кронштейн KH-200</li>
+							<li class="list-bullet__item">Установка и настройка оборудования</li>
+						</ul>
+						<div class="sale-item__price">
+							12000 руб.
+						</div>
+						<div class="sale-item__link wrapper__link">
+							<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
+						</div>
+					</div>
+
+					<div class="sale-item font-noto">
+						<div class="sale-item__title">
+							СТАНДАРТ
+						</div>
+						<div class="sale-item__img-wrapper">
+							<img class="sale-item__img" src="img/connection/antena.png" alt="Product">
+						</div>
+						<ul class="sale-item__list list-bullet">
+							<li class="list-bullet__item">Антенна KROKS KP15-1700/2700</li>
+							<li class="list-bullet__item">Модем Huawei E3372h</li>
+							<li class="list-bullet__item">Кабельная сборка F(male)-F(male) </li>
+							<li class="list-bullet__item">Адаптер для модема (пигтейл) CRC9-F</li>
+							<li class="list-bullet__item">Кронштейн KH-200</li>
+							<li class="list-bullet__item">Установка и настройка оборудования</li>
+						</ul>
+						<div class="sale-item__price">
+							15000 руб.
+						</div>
+						<div class="sale-item__link wrapper__link">
+							<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
+						</div>
+					</div>
+
+					<div class="sale-item font-noto">
+						<div class="sale-item__title">
+							ПРЕМИУМ
+						</div>
+						<div class="sale-item__img-wrapper">
+							<img class="sale-item__img" src="img/connection/antena.png" alt="Product">
+						</div>
+						<ul class="sale-item__list list-bullet">
+							<li class="list-bullet__item">Антенна KROKS KP15-1700/2700</li>
+							<li class="list-bullet__item">Модем Huawei E3372h</li>
+							<li class="list-bullet__item">Кабельная сборка F(male)-F(male) </li>
+							<li class="list-bullet__item">Адаптер для модема (пигтейл) CRC9-F</li>
+							<li class="list-bullet__item">Кронштейн KH-200</li>
+							<li class="list-bullet__item">Установка и настройка оборудования</li>
+						</ul>
+						<div class="sale-item__price">
+							20000 руб.
+						</div>
+						<div class="sale-item__link wrapper__link">
+							<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="rate section">
+		<div class="container">
+
+			<h2 class="rate__title base-title">Тарифы абонентской платы</h2>
+
+			<div class="sales">
+				<div class="sales__wrapper flex flex-space-between flex-align-stretch flex-mobile-column">
+
+					<div class="sale-item rate__item font-noto">
+						<div class="sale-item__title">
+							Скоростной интернет
+						</div>
+						<div class="sale-item__list list-icon">
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/internet.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Домашний интернет до 100 Мбит/с
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/tv.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									ТВ 100 каналов
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/router.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Оборудование
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/phone.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Мобильная связь
+								</div>
+							</div>
+
+						</div>
+						<div class="sale-item__price">
+							600 руб./мес
+						</div>
+						<div class="sale-item__link wrapper__link">
+							<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
+						</div>
+					</div>
+
+					<div class="sale-item rate__item font-noto">
+						<div class="sale-item__title">
+							Скоростной интернет
+						</div>
+						<div class="sale-item__list list-icon">
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/internet.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Домашний интернет до 100 Мбит/с
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/tv.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									ТВ 100 каналов
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/router.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Оборудование
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/phone.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Мобильная связь
+								</div>
+							</div>
+
+						</div>
+						<div class="sale-item__price">
+							600 руб./мес
+						</div>
+						<div class="sale-item__link wrapper__link">
+							<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
+						</div>
+					</div>
+
+					<div class="sale-item rate__item font-noto">
+						<div class="sale-item__title">
+							Скоростной интернет
+						</div>
+						<div class="sale-item__list list-icon">
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/internet.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Домашний интернет до 100 Мбит/с
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/tv.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									ТВ 100 каналов
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/router.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Оборудование
+								</div>
+							</div>
+
+							<div class="list-icon__item flex flex-align-bottom">
+								<div class="list-icon__icon">
+									<img src="img/rate/phone.svg" alt="Icon">
+								</div>
+								<div class="list-icon__text">
+									Мобильная связь
+								</div>
+							</div>
+
+						</div>
+						<div class="sale-item__price">
+							600 руб./мес
+						</div>
+						<div class="sale-item__link wrapper__link">
+							<a href="#" class="link link-red">ПОДКЛЮЧИТЬ</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="application-form section">
+		<div class="container application-form__img-anchor">
+
+			<h2 class="application-form__title base-title color-white">
+				Мы подключаем интернет, где остальные не могут.
+			</h2>
+
+			<form class="form-contact font-noto">
+				<div class="flex flex-mobile-column">
+					<input type="text" class="form-contact__input" placeholder="Ваше имя">
+					<input type="text" class="form-contact__input" placeholder="Номер телефона">
+				</div>
+				<button type="submit" class="form-contact__button button button-red">
+					ОСТАВИТЬ ЗАЯВКУ
+				</button>
+			</form>
+
+			<div class="application-form__img-wrapper">
+				<img src="img/form/phone.png" alt="Phone" class="application-form__img">
+			</div>
+
+		</div>
+	</section>
+
+	<section class="how-connect section">
+		<div class="container">
+
+			<h2 class="how-connect__title base-title">Как подключить интернет?</h2>
+
+			<div class="timeline">
+				<div class="timeline__wrapper flex flex-space-between flex-mobile-column">
+
+					<div class="timeline__item flex-mobile">
+						<div class="timeline__number color-red font-bold">
+							1.
+						</div>
+						<div class="timeline__text font-noto">
+							ОСТАВЛЯЕТЕ ЗАЯВКУ <br> НА ПОДКЛЮЧЕНИЕ
+						</div>
+					</div>
+
+					<div class="timeline__item flex-mobile">
+						<div class="timeline__number color-red font-bold">
+							2.
+						</div>
+						<div class="timeline__text font-noto">
+							СОГЛАСОВАНИЕ ВРЕМЕНИ <br> И ДАТЫ МОНТАЖА
+						</div>
+					</div>
+
+					<div class="timeline__item flex-mobile">
+						<div class="timeline__number color-red font-bold">
+							3.
+						</div>
+						<div class="timeline__text font-noto">
+							СОГЛАСОВАНИЕ ВРЕМЕНИ <br> И ДАТЫ МОНТАЖА
+						</div>
+					</div>
+
+					<div class="timeline__item flex-mobile">
+						<div class="timeline__number color-red font-bold">
+							4.
+						</div>
+						<div class="timeline__text font-noto">
+							НАСЛАЖДАЕТЕСЬ <br> ИНТЕРНЕТОМ
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about section">
+		<div class="container flex flex-mobile-column">
+
+			<div class="about__info">
+				
+				<h2 class="about__title base-title">О компании</h2>
+
+				<p class="about__text font-noto">
+					Использование безлимитного беспроводного интернета по технологии <span class="color-red">ЭВЕРЕСТ – ТЕЛЕКОМ</span> будет актуально для тех, кто постоянно или время от времени проживает за городом и кому необходим быстрый интернет для работы или учебы, для общения с родными и близкими и других задач. 
+				</p>
+				<p class="about__text font-noto">
+					Использование безлимитного беспроводного интернета по технологии будет актуально для тех, кто постоянно или время от времени проживает за городом и кому необходим быстрый интернет для работы или учебы, для общения с родными и близкими и других задач. 
+				</p>
+				<p class="about__text font-noto">
+					Использование безлимитного беспроводного интернета по технологии будет актуально для тех, кто постоянно или время от времени проживает за городом и кому необходим быстрый интернет для работы или учебы, для общения с родными и близкими и других задач. 
+				</p>
+
+			</div>
+
+			<div class="about__slider slider">
+				Здесь будет слайдер :)
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="footer color-white">
+		<div class="container">
+
+			<div class="footer__wrapper">
+
+				<div class="footer__logo">
+					<a href="#">
+						<object
+							type="image/svg+xml"
+							data="img/logo.svg">
+							<img src="img/logo.png" alt="Logo">
+						</object>
+					</a>
+				</div>
+
+				<div class="footer__info flex flex-mobile-column">
+
+					<div class="contacts">
+
+						<div class="contacts__block">
+							<span class="contacts__string">Телефон:</span>
+							<a href="tel:+79140005555 " class="color-white contacts__link">+7(914)000-55-55 </a>
+						</div>
+
+						<div class="contacts__block">
+							<span class="contacts__string">Адрес:</span>
+							<span class="contacts__string">ул.Байкальска 125 оф.1</span>
+						</div>
+
+						<div class="contacts__block">
+							<a href="#" class="contacts__link-social contacts__link">
+								<img src="img/insta.svg" alt="Instagram">
+							</a>
+							<a href="#" class="contacts__link-social contacts__link">
+								<img src="img/vk.svg" alt="Vk">
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__form">
+
+						<h4 class="footer__title base-title color-white">Подключите быстрый интернет уже сегодня!</h4>
+
+						<form class="form-contact font-noto">
+							<div>
+								<input type="text" class="form-contact__input" placeholder="Номер телефона">
+							</div>
+							<button type="submit" class="form-contact__button button button-red">
+								ПОДКЛЮЧИТЬ
+							</button>
+						</form>
+
+					</div>
+					
+				</div>
+
+			</div>
+
+			<div class="footer__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8213.608704574204!2d104.30992794022531!3d52.2629890816517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da83b62e356ec49%3A0x8ccc49666e5f00d3!2z0JHQsNC50LrQsNC70YzRgdC60LDRjyDRg9C7LiwgMTI1LCDQmNGA0LrRg9GC0YHQuiwg0JjRgNC60YPRgtGB0LrQsNGPINC-0LHQuy4sIDY2NDA0Ng!5e0!3m2!1sru!2sru!4v1579242458303!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+
+		</div>
+	</footer>
 
 	<script src="js/scripts.min.js"></script>
 

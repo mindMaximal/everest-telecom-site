@@ -1,14 +1,16 @@
 @import "../scss/_mixins/breakpoints";
 
 $default-font: "Montserrat", sans-serif;
-$accent: orange;
-$text: #333;
-$btn: #FF4D4C;
+$accent: #FF4D4C;
+$text: #000000;
+$blue: #404EF5;
+$btn: #FC3F3F;
+
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
 $grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, ls: 1440px);
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 960, xl: 1200px, ls: 1440px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
 
 $gutter: $grid-gutter-width;
