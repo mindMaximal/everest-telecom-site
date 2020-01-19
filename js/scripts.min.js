@@ -164,7 +164,9 @@ var slider = (function (selector) {
 }());
 
 function ready() {
-    var aboutSlider = slider('.about__slider');
+    if (document.querySelector('.about__slider') != null) {
+        var aboutSlider = slider('.about__slider');
+    }
 }
 
 
