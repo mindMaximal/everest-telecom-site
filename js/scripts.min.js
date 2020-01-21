@@ -163,9 +163,56 @@ var slider = (function (selector) {
     }
 }());
 
+var popup = (function (selector) {
+    return function (selector) {
+        var _trigers = document.querySelectorAll(selector);
+
+        function popupOpen(elem) {
+            var _modal = document.querySelector(elem);
+
+            if (_modal.querySelector('.popup__close') != null) {
+                _modal.querySelector('.popup__close').addEventListener('click', function () {
+                    closePopup(elem);
+                });
+            }
+
+            _modal.addEventListener('click', function (e) {
+                if (e.target.classList.contains('popup')) {
+                    closePopup(elem);                 
+                }                
+            });
+
+            _modal.classList.add('popup-open');
+
+            return true;
+        }
+
+        function closePopup (elem) {
+            var _modal = document.querySelector(elem);
+
+            _modal.classList.remove('popup-open');   
+
+            return true;
+        }
+
+        for (var i = 0; i < _trigers.length; i++) {
+           _trigers[i].addEventListener('click', function (e) {
+               e.preventDefault();
+               var id = this.getAttribute('href');             
+               
+               popupOpen(id);                
+           });
+        }
+    }
+}());
+
 function ready() {
     if (document.querySelector('.about__slider') != null) {
         var aboutSlider = slider('.about__slider');
+    }
+
+    if (document.querySelector('.popup-trigger') != null) {
+        var popupContacts = popup('.popup-trigger');
     }
 }
 

@@ -321,8 +321,9 @@
         }
 
         &__input {
-            padding: 12px 18px;
+            padding: 12px 15px;
             max-width: 225px;
+            font-size: 0.875em;
             margin-right: 15px;
             margin-bottom: 15px;
         }
@@ -479,60 +480,54 @@
         }
     }
 
-    .user-card {
 
-        .quote {
-            margin: 10px 0;
-            padding: 20px;
-        }
-    }
+    .popup {
 
-    
-    .support {
+        &-success {
 
-        &__cash-flow {
-            width: 100%;
-        }
+            .popup {
+                
+                &__wrapper {
+                    max-width: 290px;
+                    padding: 40px 15px 65px 15px;
+                }
 
-        &__user-card {
-            margin-top: 40px;
-            width: 100%;
-        }
-
-        .quote {
-            width: 48%;
-            padding: 20px 0;
-            border-bottom: 1px dashed #DEE2FF;
-
-            &:nth-child(odd) {
-                margin-right: 10px;
-                margin-left: 0;
-            }
-
-            &:nth-child(even) {
-                margin-right: 0;
-                margin-left: 10px;
-            }
-
-            &__block {
-
-                &:last-of-type {
-                    border-bottom: none;
+                &__title {
+                    margin-top: 20px;
                 }
             }
+        }
 
-            &__wrapper {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: stretch;
-                padding: 0 20px;
-                background-color: #f6faff;
+        &__close {
+            width: 30px;
+            height: 30px;
+        }
 
-                &:last-of-type {
+        &__wrapper {
+            max-width: 387px;
+            background-image: url('../img/popup/768.jpg');
+        }
 
-                    .quote {
-                        border-bottom: none;
-                    }
+        &__title {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        &__text {
+            font-size: 1.1em;
+        }
+
+        &__form {
+            max-width: 295px;
+
+            .form {
+
+                &__input {
+                    padding: 15px 18px;
+                }
+
+                &__button {
+                    padding: 18px 65px;
                 }
             }
         }
@@ -691,7 +686,7 @@
         display: flex;
     }
 
-    .base-title {
+    .title-base {
         font-size: 1.25em;
     }
 
@@ -1144,38 +1139,101 @@
         }
     }
 
-    .payments {
-        
-        .quote {
+    .popup {
+
+        &-success {
+
+            .popup {
+                
+                &__wrapper {
+                    max-width: 260px;
+                    padding: 35px 15px 60px 15px;
+                }
+
+                &__title {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &__close {
+            width: 34px;
+            height: 34px;
+        }
+
+        &__wrapper {
+            max-width: 290px;
+            background-image: url('../img/popup/320.jpg');
+            padding: 20px 13px 22px 13px;
+        }
+
+        &__title {
             margin-top: 20px;
-        }
-    }
-
-    .refill {
-
-        &__form {
-            width: 100%;
-            padding: 10px 0;
+            font-size: 1.125em;
         }
 
-        &__banner {
-            width: 100%;
-            margin-top: 35px;
-            height: 280px;
-        }
-    }
-    
-    .user-card {
-
-        .container {
-            padding-right: 0;
-        }
-
-        .quote {
-            padding: 20px 5px;
+        &__text {
             font-size: 0.875em;
         }
+
+        &__form {
+            max-width: 205px;
+            margin-top: 20px;
+
+            .form {
+
+                &__block {
+                    margin-bottom: 10px;
+
+                    &:after {
+                        right: 15px;
+                    }
+                }
+
+                &__input {
+                    padding: 10px 15px;
+                }
+
+                &__button {
+                    margin-top: 5px;
+                    padding: 12px 40px;
+                }
+            }
+        }
     }
+
+    // .payments {
+        
+    //     .quote {
+    //         margin-top: 20px;
+    //     }
+    // }
+
+    // .refill {
+
+    //     &__form {
+    //         width: 100%;
+    //         padding: 10px 0;
+    //     }
+
+    //     &__banner {
+    //         width: 100%;
+    //         margin-top: 35px;
+    //         height: 280px;
+    //     }
+    // }
+    
+    // .user-card {
+
+    //     .container {
+    //         padding-right: 0;
+    //     }
+
+    //     .quote {
+    //         padding: 20px 5px;
+    //         font-size: 0.875em;
+    //     }
+    // }
 }
 
 // ≥576px
