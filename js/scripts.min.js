@@ -172,13 +172,13 @@ var popup = (function (selector) {
 
             if (_modal.querySelector('.popup__close') != null) {
                 _modal.querySelector('.popup__close').addEventListener('click', function () {
-                    closePopup(elem);
+                    popupClose(elem);
                 });
             }
 
             _modal.addEventListener('click', function (e) {
                 if (e.target.classList.contains('popup')) {
-                    closePopup(elem);                 
+                    popupClose(elem);                 
                 }                
             });
 
@@ -187,7 +187,7 @@ var popup = (function (selector) {
             return true;
         }
 
-        function closePopup (elem) {
+        function popupClose (elem) {
             var _modal = document.querySelector(elem);
 
             _modal.classList.remove('popup-open');   
@@ -203,8 +203,34 @@ var popup = (function (selector) {
                popupOpen(id);                
            });
         }
+
+        return {
+            open(id) {
+                popupOpen(id);
+            },
+            close(id) {
+                popupClose(id);
+            }
+        }
     }
 }());
+
+function submitHandler(e){    
+    e.preventDefault();
+    var self = this;
+    fetch("mail.php", {
+        method: "POST",
+        body: new FormData(self)
+    }).then(function() {
+        if (document.querySelector('.popup-open') != null) {
+            var id ='#' + document.querySelector('.popup-open').getAttribute('id');       
+            popupContacts.close(id);
+        }   
+        popupContacts.open("#popup-success-massage");
+        self.reset();
+    })
+    .catch(function(error) { console.log(error); });
+} 
 
 function ready() {
     if (document.querySelector('.about__slider') != null) {
@@ -212,9 +238,15 @@ function ready() {
     }
 
     if (document.querySelector('.popup-trigger') != null) {
-        var popupContacts = popup('.popup-trigger');
+        popupContacts = popup('.popup-trigger');       
     }
+
+    document.querySelectorAll('.form').forEach(function(element) {
+        element.addEventListener('submit', submitHandler);
+    });
+
+    
 }
 
-
+var popupContacts;
 document.addEventListener("DOMContentLoaded", ready);
